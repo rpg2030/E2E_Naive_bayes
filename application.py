@@ -63,7 +63,7 @@ X = scaler.fit_transform(X)
 # Train the Naive Bayes model
 @st.cache_resource
 def train_model(X, y):
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y,random_state=42)
     model = GaussianNB()
     model.fit(X_train, y_train)
     return model, X_test, y_test
