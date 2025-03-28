@@ -127,10 +127,10 @@ plt.title("Feature Correlation Heatmap")
 st.pyplot(fig)
 
 # Pairplot
-st.subheader("🔹 Pairplot of Features")
-st.write("This plot helps visualize relationships between different features.")
-fig = sns.pairplot(df, hue="Outcome", diag_kind="kde", palette=["#ff4b4b", "#4caf50"])
-st.pyplot(fig)
+# st.subheader("🔹 Pairplot of Features")
+# st.write("This plot helps visualize relationships between different features.")
+# fig = sns.pairplot(df, hue="Outcome", diag_kind="kde", palette=["#ff4b4b", "#4caf50"])
+# st.pyplot(fig)
 
 # Count Plot (Diabetes vs. Non-Diabetes Cases)
 st.subheader("🔹 Count of Diabetes vs. Non-Diabetes Cases")
